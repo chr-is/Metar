@@ -45,7 +45,7 @@ class Metar
      */
     public function fetchMetarData()
     {
-        $url = 'http://weather.noaa.gov/pub/data/observations/metar/stations/' . $this->stationCode . '.TXT';
+        $url = 'http://tgftp.nws.noaa.gov/data/observations/metar/stations/' . $this->stationCode . '.TXT';
 
         $metarData = @file($url);
 
